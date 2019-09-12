@@ -18,8 +18,6 @@ namespace SpheroWiFi
 
         FileStream fs;
         Image img;
-        string strResponse;
-        byte[] byteResponse;
         HttpClient client = new HttpClient();
         MjpegDecoder m_mjpeg;
 

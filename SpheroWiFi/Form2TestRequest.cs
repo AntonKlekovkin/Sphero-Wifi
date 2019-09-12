@@ -13,8 +13,8 @@ namespace SpheroWiFi
 {
     public partial class Form2TestRequest : Form
     {
-        string strResponse;
-        byte[] byteResponse;
+        //string strResponse;
+        //byte[] byteResponse;
         HttpClient client = new HttpClient();
 
         public Form2TestRequest(string str)
@@ -81,6 +81,11 @@ namespace SpheroWiFi
         private void button4_Click(object sender, EventArgs e)
         {
             tbReceiveTest.Clear();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

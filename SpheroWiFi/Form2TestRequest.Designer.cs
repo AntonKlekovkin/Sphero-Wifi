@@ -30,14 +30,15 @@
         {
             this.tbUrl = new System.Windows.Forms.TextBox();
             this.btnRequest = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tbReceiveTest = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.rb_Off = new System.Windows.Forms.RadioButton();
             this.rb_Dec = new System.Windows.Forms.RadioButton();
             this.rb_Ascii = new System.Windows.Forms.RadioButton();
             this.button4 = new System.Windows.Forms.Button();
             this.rb_Hex = new System.Windows.Forms.RadioButton();
-            this.tbReceiveTest = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.SuspendLayout();
@@ -59,16 +60,37 @@
             this.btnRequest.UseVisualStyleBackColor = true;
             this.btnRequest.Click += new System.EventHandler(this.btnRequest_Click);
             // 
+            // btnClose
+            // 
+            this.btnClose.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnClose.Location = new System.Drawing.Point(12, 329);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(387, 30);
+            this.btnClose.TabIndex = 3;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.tbReceiveTest);
             this.panel1.Controls.Add(this.groupBox5);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(12, 63);
+            this.panel1.Location = new System.Drawing.Point(12, 68);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(7);
             this.panel1.Size = new System.Drawing.Size(387, 261);
-            this.panel1.TabIndex = 2;
+            this.panel1.TabIndex = 4;
+            // 
+            // tbReceiveTest
+            // 
+            this.tbReceiveTest.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbReceiveTest.Location = new System.Drawing.Point(7, 56);
+            this.tbReceiveTest.Multiline = true;
+            this.tbReceiveTest.Name = "tbReceiveTest";
+            this.tbReceiveTest.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbReceiveTest.Size = new System.Drawing.Size(373, 198);
+            this.tbReceiveTest.TabIndex = 6;
             // 
             // groupBox5
             // 
@@ -139,27 +161,18 @@
             this.rb_Hex.Text = "HEX";
             this.rb_Hex.UseVisualStyleBackColor = true;
             // 
-            // tbReceiveTest
-            // 
-            this.tbReceiveTest.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbReceiveTest.Location = new System.Drawing.Point(7, 56);
-            this.tbReceiveTest.Multiline = true;
-            this.tbReceiveTest.Name = "tbReceiveTest";
-            this.tbReceiveTest.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbReceiveTest.Size = new System.Drawing.Size(373, 198);
-            this.tbReceiveTest.TabIndex = 6;
-            // 
             // Form2TestRequest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(411, 336);
+            this.ClientSize = new System.Drawing.Size(411, 371);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnRequest);
             this.Controls.Add(this.tbUrl);
             this.Name = "Form2TestRequest";
             this.Padding = new System.Windows.Forms.Padding(12);
-            this.Text = "Form2TestRequest";
+            this.Text = "Test Request";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox5.ResumeLayout(false);
@@ -173,13 +186,14 @@
 
         private System.Windows.Forms.TextBox tbUrl;
         private System.Windows.Forms.Button btnRequest;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox tbReceiveTest;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.RadioButton rb_Off;
         private System.Windows.Forms.RadioButton rb_Dec;
         private System.Windows.Forms.RadioButton rb_Ascii;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.RadioButton rb_Hex;
-        private System.Windows.Forms.TextBox tbReceiveTest;
     }
 }

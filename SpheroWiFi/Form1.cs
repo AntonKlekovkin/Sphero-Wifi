@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -9,14 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
 using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Threading.Tasks;
 using System.IO;
-using System.Threading;
-using System.Diagnostics;
-using System.Net.NetworkInformation;
-using System.Net.Sockets;
-using MJpegDecoder;
 
 namespace SpheroWiFi
 {
@@ -49,20 +39,9 @@ namespace SpheroWiFi
                 cb_IP.Items.Clear();
                 cb_IP.Items.AddRange(strIp);
                 cb_IP.Text = strIp[0];
-
-                tb_url.Text = cb_IP.Text + "/capture";
             }
-            //var countIP = RefreshIP();
-
-            //if (countIP != 0)  //если найден хоть один
-            //{
-            //    //cb_IP.Text = cb_IP.Items;  //выводим первый доступный
-            //}
 
             System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = false;   //без этого не работает
-
-            pbPhoto.Width = sizeX;
-            pbPhoto.Height = sizeY;
 
             strResponse = string.Empty;
 
@@ -154,15 +133,7 @@ namespace SpheroWiFi
 
 
         async Task MyHttp(Uri u)
-        {
-            int numberEndJpg = 0;
-            //Image img;// = Image.FromFile("jpgTest.jpg");
-
-            //Uri u = new Uri("http://" + tb_url.Text);
-
-            // Create a New HttpClient object and dispose it when done, so the app doesn't leak resources
-            
-            
+        {   
             // Call asynchronous network methods in a try/catch block to handle exceptions
             try
             {
@@ -203,7 +174,6 @@ namespace SpheroWiFi
                         {
                             img = Image.FromFile("jpgTest.jpg");
                             img.RotateFlip(RotateFlipType.Rotate90FlipNone);
-                            pbPhoto.Image = img;
                         }
                         catch
                         {
@@ -248,26 +218,12 @@ namespace SpheroWiFi
                 tb_Receive.AppendText(e.Message.ToString());
             }
             
-
-            
-
             //response.Close();
-        }
-
-        
-
-
-
-        private async void button1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             RefreshIP();
-
-
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -451,53 +407,7 @@ namespace SpheroWiFi
             }
 
         }
-
-        MjpegDecoder m_mjpeg;
-
-        private async void StartVideo_Click(object sender, EventArgs e)
-        {
-            Uri u = new Uri("http://" + cb_IP.Text + ":81/stream");
-
-            // In the constructor
-            m_mjpeg = new MjpegDecoder();
-            m_mjpeg.FrameReady += mjpeg_FrameReady;
-
-            m_mjpeg.ParseStream(u);
-        }
-
-        // Private method
-        private void mjpeg_FrameReady(object sender, FrameReadyEventArgs e)
-        {            
-            //pbPhoto.Image = e.Bitmap;
-
-            fs = File.Create("jpgTest.jpg");
-                        
-            for (int i = 0; i < e.FrameBuffer.Length; i++)
-            {
-                fs.WriteByte(e.FrameBuffer[i]);
-            }
-
-            fs.Close();
-            fs.Dispose();
-
-            try
-            {
-                img = Image.FromFile("jpgTest.jpg");
-                img.RotateFlip(RotateFlipType.Rotate90FlipNone);
-                pbPhoto.Image = img;
-            }
-            catch
-            {
-                tb_Receive.AppendText("Error opening jpg\r\n");
-            }
-        }
-
-
-        private void btnStopVideo_Click(object sender, EventArgs e)
-        {
-            m_mjpeg.StopStream();
-        }
-
+                
         private void btnReset_Click(object sender, EventArgs e)
         {
             Command[0] = 111;
@@ -601,21 +511,7 @@ namespace SpheroWiFi
                 btnBack2.PerformClick();
             }
         }
-
-        private async void btnTestRequest_Click(object sender, EventArgs e)
-        {
-            Uri u = new Uri("http://" + tb_url.Text);
-
-            try
-            {
-                await MyHttp(u);
-            }
-            catch
-            {
-                tb_Receive.AppendText("Error Http\r\n");
-            }
-        }
-
+                
         private void TbTrajectoryIsEmpty()
         {
             if (tbTrajectory.Text != string.Empty)
@@ -825,6 +721,16 @@ namespace SpheroWiFi
         {
             Form2TestRequest f = new Form2TestRequest(cb_IP.Text);
             f.Show();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("SpheroWiFi: V0.1", "About", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
