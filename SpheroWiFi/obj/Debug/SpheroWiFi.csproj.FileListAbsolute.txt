@@ -1,0 +1,11 @@
+c:\users\blocke1\documents\visual studio 2015\Projects\SpheroWiFi\SpheroWiFi\bin\Debug\SpheroWiFi.exe.config
+c:\users\blocke1\documents\visual studio 2015\Projects\SpheroWiFi\SpheroWiFi\bin\Debug\SpheroWiFi.exe
+c:\users\blocke1\documents\visual studio 2015\Projects\SpheroWiFi\SpheroWiFi\bin\Debug\SpheroWiFi.pdb
+c:\users\blocke1\documents\visual studio 2015\Projects\SpheroWiFi\SpheroWiFi\obj\Debug\SpheroWiFi.csprojResolveAssemblyReference.cache
+c:\users\blocke1\documents\visual studio 2015\Projects\SpheroWiFi\SpheroWiFi\obj\Debug\SpheroWiFi.Form1.resources
+c:\users\blocke1\documents\visual studio 2015\Projects\SpheroWiFi\SpheroWiFi\obj\Debug\SpheroWiFi.Properties.Resources.resources
+c:\users\blocke1\documents\visual studio 2015\Projects\SpheroWiFi\SpheroWiFi\obj\Debug\SpheroWiFi.csproj.GenerateResource.Cache
+c:\users\blocke1\documents\visual studio 2015\Projects\SpheroWiFi\SpheroWiFi\obj\Debug\SpheroWiFi.exe
+c:\users\blocke1\documents\visual studio 2015\Projects\SpheroWiFi\SpheroWiFi\obj\Debug\SpheroWiFi.pdb
+C:\Users\BlockE1\documents\visual studio 2015\Projects\SpheroWiFi\SpheroWiFi\obj\Debug\SpheroWiFi.Form2TestRequest.resources
+C:\Users\BlockE1\documents\visual studio 2015\Projects\SpheroWiFi\SpheroWiFi\obj\Debug\SpheroWiFi.Form3PhotoVideo.resources

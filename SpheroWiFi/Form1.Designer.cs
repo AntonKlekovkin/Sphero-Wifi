@@ -65,7 +65,6 @@
             this.tbStatus = new System.Windows.Forms.TextBox();
             this.btnCheck = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.cb_IP = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -119,7 +118,7 @@
             // button3
             // 
             this.button3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button3.Location = new System.Drawing.Point(10, 684);
+            this.button3.Location = new System.Drawing.Point(10, 635);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(549, 32);
             this.button3.TabIndex = 6;
@@ -132,11 +131,11 @@
             this.groupBox1.Controls.Add(this.groupBox5);
             this.groupBox1.Controls.Add(this.tb_Receive);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox1.Location = new System.Drawing.Point(10, 500);
+            this.groupBox1.Location = new System.Drawing.Point(10, 473);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(5);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(5);
-            this.groupBox1.Size = new System.Drawing.Size(549, 184);
+            this.groupBox1.Size = new System.Drawing.Size(549, 162);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Receive";
@@ -213,11 +212,11 @@
             // tb_Receive
             // 
             this.tb_Receive.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tb_Receive.Location = new System.Drawing.Point(5, 74);
+            this.tb_Receive.Location = new System.Drawing.Point(5, 72);
             this.tb_Receive.Multiline = true;
             this.tb_Receive.Name = "tb_Receive";
             this.tb_Receive.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tb_Receive.Size = new System.Drawing.Size(539, 105);
+            this.tb_Receive.Size = new System.Drawing.Size(539, 85);
             this.tb_Receive.TabIndex = 1;
             // 
             // groupBox3
@@ -245,14 +244,14 @@
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupBox3.Location = new System.Drawing.Point(203, 18);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(341, 163);
+            this.groupBox3.Size = new System.Drawing.Size(341, 135);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Control Motors";
             // 
             // tbSpeedRotate
             // 
-            this.tbSpeedRotate.Location = new System.Drawing.Point(130, 131);
+            this.tbSpeedRotate.Location = new System.Drawing.Point(133, 103);
             this.tbSpeedRotate.Name = "tbSpeedRotate";
             this.tbSpeedRotate.Size = new System.Drawing.Size(33, 20);
             this.tbSpeedRotate.TabIndex = 20;
@@ -260,7 +259,7 @@
             // 
             // btnGetAngles
             // 
-            this.btnGetAngles.Location = new System.Drawing.Point(254, 129);
+            this.btnGetAngles.Location = new System.Drawing.Point(257, 101);
             this.btnGetAngles.Name = "btnGetAngles";
             this.btnGetAngles.Size = new System.Drawing.Size(75, 23);
             this.btnGetAngles.TabIndex = 19;
@@ -270,7 +269,7 @@
             // 
             // tbAngle
             // 
-            this.tbAngle.Location = new System.Drawing.Point(90, 132);
+            this.tbAngle.Location = new System.Drawing.Point(93, 104);
             this.tbAngle.Name = "tbAngle";
             this.tbAngle.Size = new System.Drawing.Size(34, 20);
             this.tbAngle.TabIndex = 18;
@@ -278,7 +277,7 @@
             // 
             // btnAngle
             // 
-            this.btnAngle.Location = new System.Drawing.Point(6, 129);
+            this.btnAngle.Location = new System.Drawing.Point(9, 101);
             this.btnAngle.Name = "btnAngle";
             this.btnAngle.Size = new System.Drawing.Size(75, 23);
             this.btnAngle.TabIndex = 17;
@@ -289,7 +288,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(226, 106);
+            this.label7.Location = new System.Drawing.Point(229, 78);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(32, 13);
             this.label7.TabIndex = 15;
@@ -297,7 +296,7 @@
             // 
             // tbAng3
             // 
-            this.tbAng3.Location = new System.Drawing.Point(264, 103);
+            this.tbAng3.Location = new System.Drawing.Point(267, 75);
             this.tbAng3.Name = "tbAng3";
             this.tbAng3.Size = new System.Drawing.Size(61, 20);
             this.tbAng3.TabIndex = 14;
@@ -305,7 +304,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(117, 106);
+            this.label6.Location = new System.Drawing.Point(120, 78);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(32, 13);
             this.label6.TabIndex = 13;
@@ -313,7 +312,7 @@
             // 
             // tbAng2
             // 
-            this.tbAng2.Location = new System.Drawing.Point(155, 103);
+            this.tbAng2.Location = new System.Drawing.Point(158, 75);
             this.tbAng2.Name = "tbAng2";
             this.tbAng2.Size = new System.Drawing.Size(61, 20);
             this.tbAng2.TabIndex = 12;
@@ -321,7 +320,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(8, 106);
+            this.label5.Location = new System.Drawing.Point(11, 78);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(32, 13);
             this.label5.TabIndex = 11;
@@ -329,14 +328,14 @@
             // 
             // tbAng1
             // 
-            this.tbAng1.Location = new System.Drawing.Point(46, 103);
+            this.tbAng1.Location = new System.Drawing.Point(49, 75);
             this.tbAng1.Name = "tbAng1";
             this.tbAng1.Size = new System.Drawing.Size(61, 20);
             this.tbAng1.TabIndex = 10;
             // 
             // tbSpeed2
             // 
-            this.tbSpeed2.Location = new System.Drawing.Point(293, 64);
+            this.tbSpeed2.Location = new System.Drawing.Point(293, 48);
             this.tbSpeed2.Name = "tbSpeed2";
             this.tbSpeed2.Size = new System.Drawing.Size(43, 20);
             this.tbSpeed2.TabIndex = 9;
@@ -344,7 +343,7 @@
             // 
             // tbSpeed1
             // 
-            this.tbSpeed1.Location = new System.Drawing.Point(293, 27);
+            this.tbSpeed1.Location = new System.Drawing.Point(293, 18);
             this.tbSpeed1.Name = "tbSpeed1";
             this.tbSpeed1.Size = new System.Drawing.Size(43, 20);
             this.tbSpeed1.TabIndex = 9;
@@ -352,7 +351,7 @@
             // 
             // btnBack2
             // 
-            this.btnBack2.Location = new System.Drawing.Point(213, 61);
+            this.btnBack2.Location = new System.Drawing.Point(213, 45);
             this.btnBack2.Name = "btnBack2";
             this.btnBack2.Size = new System.Drawing.Size(75, 23);
             this.btnBack2.TabIndex = 7;
@@ -362,7 +361,7 @@
             // 
             // btnStop2
             // 
-            this.btnStop2.Location = new System.Drawing.Point(131, 62);
+            this.btnStop2.Location = new System.Drawing.Point(131, 46);
             this.btnStop2.Name = "btnStop2";
             this.btnStop2.Size = new System.Drawing.Size(75, 23);
             this.btnStop2.TabIndex = 6;
@@ -372,7 +371,7 @@
             // 
             // btnForward2
             // 
-            this.btnForward2.Location = new System.Drawing.Point(49, 62);
+            this.btnForward2.Location = new System.Drawing.Point(49, 46);
             this.btnForward2.Name = "btnForward2";
             this.btnForward2.Size = new System.Drawing.Size(75, 23);
             this.btnForward2.TabIndex = 5;
@@ -382,7 +381,7 @@
             // 
             // btnBack1
             // 
-            this.btnBack1.Location = new System.Drawing.Point(212, 25);
+            this.btnBack1.Location = new System.Drawing.Point(211, 17);
             this.btnBack1.Name = "btnBack1";
             this.btnBack1.Size = new System.Drawing.Size(75, 23);
             this.btnBack1.TabIndex = 4;
@@ -392,7 +391,7 @@
             // 
             // btnStop1
             // 
-            this.btnStop1.Location = new System.Drawing.Point(130, 26);
+            this.btnStop1.Location = new System.Drawing.Point(130, 17);
             this.btnStop1.Name = "btnStop1";
             this.btnStop1.Size = new System.Drawing.Size(75, 23);
             this.btnStop1.TabIndex = 3;
@@ -402,7 +401,7 @@
             // 
             // btnForward1
             // 
-            this.btnForward1.Location = new System.Drawing.Point(49, 26);
+            this.btnForward1.Location = new System.Drawing.Point(49, 17);
             this.btnForward1.Name = "btnForward1";
             this.btnForward1.Size = new System.Drawing.Size(75, 23);
             this.btnForward1.TabIndex = 2;
@@ -413,7 +412,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 67);
+            this.label4.Location = new System.Drawing.Point(6, 51);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 13);
             this.label4.TabIndex = 1;
@@ -422,7 +421,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 31);
+            this.label3.Location = new System.Drawing.Point(6, 22);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 0;
@@ -436,12 +435,11 @@
             this.groupBox4.Controls.Add(this.tbStatus);
             this.groupBox4.Controls.Add(this.btnCheck);
             this.groupBox4.Controls.Add(this.btnRefresh);
-            this.groupBox4.Controls.Add(this.label1);
             this.groupBox4.Controls.Add(this.cb_IP);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox4.Location = new System.Drawing.Point(5, 18);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(194, 163);
+            this.groupBox4.Size = new System.Drawing.Size(194, 135);
             this.groupBox4.TabIndex = 9;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Connect";
@@ -449,7 +447,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(90, 72);
+            this.label2.Location = new System.Drawing.Point(90, 51);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 9;
@@ -457,7 +455,7 @@
             // 
             // tbIpMax
             // 
-            this.tbIpMax.Location = new System.Drawing.Point(151, 69);
+            this.tbIpMax.Location = new System.Drawing.Point(151, 48);
             this.tbIpMax.Name = "tbIpMax";
             this.tbIpMax.Size = new System.Drawing.Size(35, 20);
             this.tbIpMax.TabIndex = 8;
@@ -465,7 +463,7 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(6, 128);
+            this.btnReset.Location = new System.Drawing.Point(6, 107);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(180, 23);
             this.btnReset.TabIndex = 5;
@@ -475,14 +473,14 @@
             // 
             // tbStatus
             // 
-            this.tbStatus.Location = new System.Drawing.Point(6, 99);
+            this.tbStatus.Location = new System.Drawing.Point(6, 78);
             this.tbStatus.Name = "tbStatus";
             this.tbStatus.Size = new System.Drawing.Size(180, 20);
             this.tbStatus.TabIndex = 6;
             // 
             // btnCheck
             // 
-            this.btnCheck.Location = new System.Drawing.Point(6, 67);
+            this.btnCheck.Location = new System.Drawing.Point(6, 46);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(79, 23);
             this.btnCheck.TabIndex = 5;
@@ -492,7 +490,7 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(111, 30);
+            this.btnRefresh.Location = new System.Drawing.Point(111, 17);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(75, 23);
             this.btnRefresh.TabIndex = 4;
@@ -500,22 +498,13 @@
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(26, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Port";
-            // 
             // cb_IP
             // 
             this.cb_IP.FormattingEnabled = true;
             this.cb_IP.Items.AddRange(new object[] {
             "192.168.1.19",
             "192.168.1.17"});
-            this.cb_IP.Location = new System.Drawing.Point(6, 32);
+            this.cb_IP.Location = new System.Drawing.Point(6, 19);
             this.cb_IP.Name = "cb_IP";
             this.cb_IP.Size = new System.Drawing.Size(99, 21);
             this.cb_IP.TabIndex = 0;
@@ -529,7 +518,7 @@
             this.groupBox2.Location = new System.Drawing.Point(10, 34);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(5);
-            this.groupBox2.Size = new System.Drawing.Size(549, 186);
+            this.groupBox2.Size = new System.Drawing.Size(549, 158);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Control";
@@ -591,7 +580,7 @@
             this.gbTrajectory.Controls.Add(this.btnClearTr);
             this.gbTrajectory.Controls.Add(this.tbTrajectory);
             this.gbTrajectory.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gbTrajectory.Location = new System.Drawing.Point(10, 221);
+            this.gbTrajectory.Location = new System.Drawing.Point(10, 194);
             this.gbTrajectory.Name = "gbTrajectory";
             this.gbTrajectory.Padding = new System.Windows.Forms.Padding(7);
             this.gbTrajectory.Size = new System.Drawing.Size(549, 279);
@@ -617,7 +606,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 77);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(535, 39);
+            this.panel5.Size = new System.Drawing.Size(535, 30);
             this.panel5.TabIndex = 22;
             // 
             // btnStartTr
@@ -625,7 +614,7 @@
             this.btnStartTr.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnStartTr.Location = new System.Drawing.Point(115, 0);
             this.btnStartTr.Name = "btnStartTr";
-            this.btnStartTr.Size = new System.Drawing.Size(305, 39);
+            this.btnStartTr.Size = new System.Drawing.Size(305, 30);
             this.btnStartTr.TabIndex = 20;
             this.btnStartTr.Text = "Start Trajectory";
             this.btnStartTr.UseVisualStyleBackColor = true;
@@ -636,7 +625,7 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Right;
             this.button1.Location = new System.Drawing.Point(420, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 39);
+            this.button1.Size = new System.Drawing.Size(115, 30);
             this.button1.TabIndex = 19;
             this.button1.Text = "Stop Trajectory";
             this.button1.UseVisualStyleBackColor = true;
@@ -647,7 +636,7 @@
             this.btnSendTr.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnSendTr.Location = new System.Drawing.Point(0, 0);
             this.btnSendTr.Name = "btnSendTr";
-            this.btnSendTr.Size = new System.Drawing.Size(115, 39);
+            this.btnSendTr.Size = new System.Drawing.Size(115, 30);
             this.btnSendTr.TabIndex = 21;
             this.btnSendTr.Text = "Send Trajectory";
             this.btnSendTr.UseVisualStyleBackColor = true;
@@ -871,7 +860,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(569, 726);
+            this.ClientSize = new System.Drawing.Size(569, 677);
             this.Controls.Add(this.gbTrajectory);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -950,7 +939,6 @@
         private System.Windows.Forms.TextBox tbStatus;
         private System.Windows.Forms.Button btnCheck;
         private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cb_IP;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.MenuStrip menuStrip1;
